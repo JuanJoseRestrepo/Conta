@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RegistroController">
+   <top>
+      <Pane prefHeight="68.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="211.0" layoutY="24.0" text="Registro Unico de Usuarios">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="301.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="81.0" layoutY="39.0" text="Nombre de la Empresa:" />
+            <TextField fx:id="empresa" layoutX="236.0" layoutY="35.0" />
+            <Label layoutX="113.0" layoutY="78.0" text="Periodo de Inicio:" />
+            <Label layoutX="127.0" layoutY="115.0" text="Periodo de fin:" />
+            <DatePicker fx:id="inicio" layoutX="236.0" layoutY="74.0" prefHeight="25.0" prefWidth="147.0" />
+            <DatePicker fx:id="fin" layoutX="236.0" layoutY="111.0" prefHeight="25.0" prefWidth="146.0" />
+            <Button fx:id="guardar" layoutX="60.0" layoutY="271.0" mnemonicParsing="false" text="Guardar" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

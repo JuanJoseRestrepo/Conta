@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ResultadosController">
+   <top>
+      <Pane prefHeight="62.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="264.0" layoutY="32.0" text="Resultados">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="volver" layoutX="23.0" layoutY="30.0" mnemonicParsing="false" text="Volver" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="377.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="48.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMA ACTIVOS CORRIENTES">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="activosC" layoutX="48.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="48.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMA ACTIVOS NO CORRIENTES" />
+            <Text fx:id="activosNC" layoutX="48.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="48.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:" />
+            <Text fx:id="sumaActivos" layoutX="96.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="290.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMA PASIVOS CORRIENTES">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="pasivosC" layoutX="289.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="290.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMA PASIVOS NO CORRIENTES">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="pasivosNC" layoutX="289.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="290.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TOTAL:" />
+            <Text fx:id="sumaPasivos" layoutX="336.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="290.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMA PASIVOS Y PATRIMONIO">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fx:id="sumaPasivosPatrimonio" layoutX="289.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
