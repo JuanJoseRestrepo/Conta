@@ -206,5 +206,18 @@ public class EstadoDeResultados implements Serializable{
 		return resultados;
 		
 	}
+	
+	public boolean buscarRepetidos(int cod) {
+		boolean t = false;
+		
+		for(int i = 0; i < ingresosOperacionales.size();i++) {
+			
+			if(cod == ingresosOperacionales.get(i).getCodigo_c()) {
+				t = true;
+			}
+		}
+		
+		return t;
+	}
 
 }

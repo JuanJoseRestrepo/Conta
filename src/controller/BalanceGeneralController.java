@@ -25,6 +25,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import model.Cuenta;
@@ -112,6 +113,8 @@ public class BalanceGeneralController implements Initializable,Serializable{
 					root = FXMLLoader.load(getClass().getResource("/application/agregarCuenta.fxml"));
 					Scene scene = new Scene(root);
 					Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+					root.getStylesheets().add("/application/application.css");
+					stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 					stage.setScene(scene);
 					stage.centerOnScreen();
 					stage.show();
@@ -152,6 +155,8 @@ public class BalanceGeneralController implements Initializable,Serializable{
 					root = FXMLLoader.load(getClass().getResource("/application/estadoResultados.fxml"));
 					Scene scene = new Scene(root);
 					Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+					root.getStylesheets().add("/application/application.css");
+					stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 					stage.setScene(scene);
 					stage.centerOnScreen();
 					stage.show();
@@ -174,6 +179,8 @@ public class BalanceGeneralController implements Initializable,Serializable{
 						root = FXMLLoader.load(getClass().getResource("/application/facturaCompra.fxml"));
 						Scene scene = new Scene(root);
 						Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+						root.getStylesheets().add("/application/application.css");
+						stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 						stage.setScene(scene);
 						stage.centerOnScreen();
 						stage.show();

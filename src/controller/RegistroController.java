@@ -19,6 +19,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
@@ -61,6 +62,8 @@ public class RegistroController implements Initializable,Serializable{
 					root = FXMLLoader.load(getClass().getResource("/application/balance.fxml"));
 					Scene scene = new Scene(root);
 					Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+					root.getStylesheets().add("/application/application.css");
+					stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 					stage.setScene(scene);
 					stage.centerOnScreen();
 					stage.show();

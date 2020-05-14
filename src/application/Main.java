@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import model.AdministradorCuentas;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 
 
 public class Main extends Application implements Serializable{
@@ -33,7 +34,10 @@ public class Main extends Application implements Serializable{
 		}else {
 			root = FXMLLoader.load(getClass().getResource("balance.fxml"));
 		}
-		 
+		
+		root.getStylesheets().add("/application/application.css");
+		arg0.getIcons().add(new Image("/application/horseHipodromo.jpg"));
+		root.getStyleClass().add("pane");
 		arg0.setScene(new Scene(root));
 		arg0.setResizable(true);
 		arg0.show();

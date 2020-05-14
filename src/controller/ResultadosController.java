@@ -15,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -114,6 +115,8 @@ public class ResultadosController implements Initializable,Serializable{
 					root = FXMLLoader.load(getClass().getResource("/application/balance.fxml"));
 					Scene scene = new Scene(root);
 					Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+					root.getStylesheets().add("/application/application.css");
+					stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 					stage.setScene(scene);
 					stage.centerOnScreen();
 					stage.show();
