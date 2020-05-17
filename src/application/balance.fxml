@@ -11,17 +11,23 @@
    <top>
       <Pane prefHeight="158.0" prefWidth="720.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="310.0" layoutY="42.0" prefHeight="20.0" prefWidth="101.0" text="Administrador">
+            <Label alignment="TOP_CENTER" layoutX="259.0" layoutY="43.0" prefHeight="20.0" prefWidth="197.0" text="Administrador">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="317.0" layoutY="112.0" text="Lista de Cuentas" />
-            <Label fx:id="inicio" layoutX="47.0" layoutY="44.0" />
-            <Label fx:id="fin" layoutX="46.0" layoutY="95.0" />
-            <Label layoutX="42.0" layoutY="71.0" text="A" />
-            <Label layoutX="42.0" layoutY="14.0" text="De" />
-            <Label fx:id="nombre" layoutX="346.0" layoutY="80.0" />
+            <Label alignment="TOP_CENTER" layoutX="228.0" layoutY="112.0" prefHeight="17.0" prefWidth="255.0" text="Lista de Cuentas" />
+            <Label fx:id="inicio" layoutX="75.0" layoutY="44.0" />
+            <Label fx:id="fin" layoutX="75.0" layoutY="71.0" />
+            <Label layoutX="42.0" layoutY="71.0" text="A:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="42.0" layoutY="44.0" text="De:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="nombre" alignment="TOP_CENTER" layoutX="274.0" layoutY="80.0" prefHeight="17.0" prefWidth="173.0" />
          </children>
       </Pane>
    </top>

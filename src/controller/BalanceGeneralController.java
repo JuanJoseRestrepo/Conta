@@ -135,6 +135,8 @@ public class BalanceGeneralController implements Initializable,Serializable{
 					root = FXMLLoader.load(getClass().getResource("/application/resultados.fxml"));
 					Scene scene = new Scene(root);
 					Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+					root.getStylesheets().add("/application/application.css");
+					stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
 					stage.setScene(scene);
 					stage.centerOnScreen();
 					stage.show();
@@ -177,6 +179,15 @@ public class BalanceGeneralController implements Initializable,Serializable{
 				try {
 					if (documentos.getValue().equals("Factura de Compra")) {
 						root = FXMLLoader.load(getClass().getResource("/application/facturaCompra.fxml"));
+						Scene scene = new Scene(root);
+						Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
+						root.getStylesheets().add("/application/application.css");
+						stage.getIcons().add(new Image("/application/horseHipodromo.jpg"));
+						stage.setScene(scene);
+						stage.centerOnScreen();
+						stage.show();
+					} else if(documentos.getValue().equals("Factura de Venta")) {
+						root = FXMLLoader.load(getClass().getResource("/application/FacturaDeVentas.fxml"));
 						Scene scene = new Scene(root);
 						Stage stage = (Stage) ((Node) t.getSource()).getScene().getWindow();
 						root.getStylesheets().add("/application/application.css");
